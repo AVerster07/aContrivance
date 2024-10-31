@@ -1,0 +1,164 @@
+/* ////////////////////////////////////// */
+/* Font */
+/* ////////////////////////////////////// */
+@font-face {
+  font-family: "GTWalsheim";
+  src: url(GT-Walsheim-Regular.otf);
+}
+
+/* ////////////////////////////////////// */
+/* Color Variables */
+/* ////////////////////////////////////// */
+:root {
+  --off-white: #f9f8f4;
+  --nice-grey: #2c3531;
+  --dark-turquoise: #116466;
+}
+
+/* ////////////////////////////////////// */
+/* Body Style */
+/* ////////////////////////////////////// */
+
+body {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.34'%3E%3Cpolygon fill='%230a281b' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23155036' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%231f7852' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%232aa06d' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%2334C888' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* ////////////////////////////////////// */
+/* Header Section */
+/* ////////////////////////////////////// */
+.header h1 {
+  font-family: "GTWalsheim", sans-serif;
+  color: var(--off-white);
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-size: 72px;
+  font-weight: 800;
+}
+
+.header h2 {
+  font-family: "GTWalsheim", sans-serif;
+  color: var(--off-white);
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.header h6 {
+  font-family: "GTWalsheim", sans-serif;
+  color: var(--off-white);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* ////////////////////////////////////// */
+/* Color Palettes Section */
+/* ////////////////////////////////////// */
+
+.palettes {
+  margin-top: 36px;
+  height: 100vh;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.palettes h2 {
+  font-family: "GTWalsheim", sans-serif;
+  color: var(--off-white);
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.palettes h3 {
+  font-family: "GTWalsheim", sans-serif;
+  color: var(--off-white);
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* Palette 1 */
+.cp1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.cp1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  filter: blur(8px);
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.cp1v1,
+.cp1v2,
+.cp1v3,
+.cp1v4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  padding-bottom: 10px;
+  z-index: 1;
+}
+
+.cp1v1 {
+  background-color: #0583f2;
+}
+
+.cp1v2 {
+  background-color: #0597f2;
+}
+
+.cp1v3 {
+  background-color: #f0f1f2;
+}
+
+.cp1v4 {
+  background-color: #79838b;
+}
+
+.cp1v1 p,
+.cp1v2 p,
+.cp1v3 p,
+.cp1v4 p {
+  font-family: "GTWalsheim", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.cp1v3 p {
+  color: #333;
+}
