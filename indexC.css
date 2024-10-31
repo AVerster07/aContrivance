@@ -65,8 +65,7 @@ body {
 
 .palettes {
   margin-top: 36px;
-  height: 100vh;
-  width: fit-content;
+  height: auto;
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
@@ -91,17 +90,18 @@ body {
   font-weight: 400;
 }
 
-/* Palette 1 */
-.cp1 {
+.palette-container {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 24px;
-  margin-top: 8px;
-  padding: 24px;
+  margin: 16px auto;
+  padding: 24px 0;
+  width: fit-content;
 }
 
-.cp1::before {
+.palette-container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -112,8 +112,12 @@ body {
   filter: blur(8px);
   border-radius: 8px;
   border: 1px solid rgba(5, 5, 5, 0.5);
-  border-radius: 8px;
   z-index: -1;
+}
+
+/* Palette 1 */
+.cp1 {
+  width: calc((150px * 4) + (24px * 3) + 48px);
 }
 
 .cp1v1,
@@ -858,4 +862,407 @@ body {
 .cp10v4 p,
 .cp10v5 p {
   color: #333;
+}
+
+/* Palette 11 */
+.cp11 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+  padding: 24px;
+}
+
+.cp11::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  filter: blur(8px);
+  border-radius: 8px;
+  border: 1px solid rgba(5, 5, 5, 0.5);
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.cp11v1,
+.cp11v2,
+.cp11v3,
+.cp11v4,
+.cp11v5 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  padding-bottom: 10px;
+  z-index: 1;
+}
+
+.cp11v1 {
+  background-color: #1a5276;
+}
+
+.cp11v2 {
+  background-color: #2980b9;
+}
+
+.cp11v3 {
+  background-color: #85c1e9;
+}
+
+.cp11v4 {
+  background-color: #f7dc6f;
+}
+
+.cp11v5 {
+  background-color: #d4ac0d;
+}
+
+.cp11v1 p,
+.cp11v2 p,
+.cp11v3 p,
+.cp11v4 p,
+.cp11v5 p {
+  font-family: "GTWalsheim", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.cp11v4 p {
+  color: #333;
+}
+
+/* Palette 12 */
+.cp12 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+  padding: 24px;
+}
+
+.cp12::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  filter: blur(8px);
+  border-radius: 8px;
+  border: 1px solid rgba(5, 5, 5, 0.5);
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.cp12v1,
+.cp12v2,
+.cp12v3,
+.cp12v4,
+.cp12v5 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  padding-bottom: 10px;
+  z-index: 1;
+}
+
+.cp12v1 {
+  background-color: #7e102c;
+}
+
+.cp12v2 {
+  background-color: #e1d4c1;
+}
+
+.cp12v3 {
+  background-color: #d7a9a8;
+}
+
+.cp12v4 {
+  background-color: #58423f;
+}
+
+.cp12v5 {
+  background-color: #e1d3cc;
+}
+
+.cp12v1 p,
+.cp12v2 p,
+.cp12v3 p,
+.cp12v4 p,
+.cp12v5 p {
+  font-family: "GTWalsheim", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.cp12v2 p,
+.cp12v5 p {
+  color: #333;
+}
+
+/* Palette 13 */
+.cp13 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+  padding: 24px;
+}
+
+.cp13::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  filter: blur(8px);
+  border-radius: 8px;
+  border: 1px solid rgba(5, 5, 5, 0.5);
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.cp13v1,
+.cp13v2,
+.cp13v3,
+.cp13v4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  padding-bottom: 10px;
+  z-index: 1;
+}
+
+.cp13v1 {
+  background-color: #1d1e1e;
+}
+
+.cp13v2 {
+  background-color: #606868;
+}
+
+.cp13v3 {
+  background-color: #95a1a1;
+}
+
+.cp13v4 {
+  background-color: #cbd7d1;
+}
+
+.cp13v1 p,
+.cp13v2 p,
+.cp13v3 p,
+.cp13v4 p {
+  font-family: "GTWalsheim", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.cp13v3 p,
+.cp13v4 p {
+  color: #333;
+}
+
+/* Palette 14 */
+.cp14 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+  padding: 24px;
+}
+
+.cp14::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  filter: blur(8px);
+  border-radius: 8px;
+  border: 1px solid rgba(5, 5, 5, 0.5);
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.cp14v1,
+.cp14v2,
+.cp14v3,
+.cp14v4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  padding-bottom: 10px;
+  z-index: 1;
+}
+
+.cp14v1 {
+  background-color: #f8f1f3;
+}
+
+.cp14v2 {
+  background-color: #e0bccc;
+}
+
+.cp14v3 {
+  background-color: #ebc5bd;
+}
+
+.cp14v4 {
+  background-color: #6e605f;
+}
+
+.cp14v1 p,
+.cp14v2 p,
+.cp14v3 p,
+.cp14v4 p {
+  font-family: "GTWalsheim", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.cp14v1 p {
+  color: #333;
+}
+
+/* ////////////////////////////////////// */
+/* Random Colors Section */
+/* ////////////////////////////////////// */
+
+.random-colors {
+  margin-top: 36px;
+  height: auto;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.random-colors h2 {
+  font-family: "GTWalsheim", sans-serif;
+  color: var(--off-white);
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.random-colors p {
+  font-family: "GTWalsheim", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.random-colors-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin: 16px auto;
+  padding: 24px;
+  width: fit-content;
+}
+
+.random-colors-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  filter: blur(8px);
+  border-radius: 8px;
+  border: 1px solid rgba(5, 5, 5, 0.5);
+  z-index: -1;
+}
+
+.r1,
+.r2,
+.r3,
+.r4,
+.r5 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  padding-bottom: 10px;
+  z-index: 1;
+}
+
+.r1 {
+  background-color: #2c3531;
+}
+
+.r2 {
+  background-color: #116466;
+}
+
+.r3 {
+  background-color: #d1e8e2;
+}
+
+.r3 p {
+  color: #333;
+}
+
+.r4 {
+  background-color: #f9f8f4;
+}
+
+.r4 p {
+  color: #333;
+}
+
+.r5 {
+  background-color: #353941;
 }
